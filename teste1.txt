@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "Esse Foi um Teste"
-read
-sleep 2
