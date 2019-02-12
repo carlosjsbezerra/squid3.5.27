@@ -55,6 +55,7 @@ systemctl stop squid.service
 echo -e "$AMARELO Criando Cache do squid $FIMCOR"
 sleep 5
 squid -z
+clear
 
 echo -e "$AMARELO Inicializando os Serviço do squid3 $FIMCOR"
 sleep 5
