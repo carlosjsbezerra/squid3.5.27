@@ -101,7 +101,7 @@ echo -e "Instalando o SQUID3, aguarde..."
 	# opção do comando cp: -v (verbose)
 	# opção do comando mv: -v (verbose)
 	mv -v /etc/squid/squid.conf /etc/squid/squid.conf.old &>> $LOG
-	cp -v conf/squid.conf.conf /etc/squid/squid.conf &>> $LOG
+	cp -v conf/squid.conf /etc/squid/squid.conf &>> $LOG
 	echo -e "Editando o arquivo de configuração do SQUID.CONF, pressione <Enter> para continuar..."
 		read
 		sleep 3
