@@ -87,8 +87,16 @@ echo -e "$amarelo Instalando o SQUID3, aguarde...$fimcor"
 echo -e "Atualização do SQUID3.CONF feita com sucesso!!!, continuando com o script..."
 sleep 5
 clear
-
 #
+echo -e "Permissão ao usuário Proxy nas pastas do squid"
+sleep 5
+chown -R proxy.proxy /var/log/squid/ 
+chown -R proxy:proxy /var/spool/squid
+echo -e "Criando spool do squid"
+sleep 5
+/etc/init.d/squid stop
+squid -z
+/etc/init.d/squid restart 
 
 echo -e "Instalação do squid3 feita com Sucesso!!!, recomendado reinicializar o servidor no final da instalação."
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
