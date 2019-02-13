@@ -53,9 +53,10 @@ sleep 5
 
 echo
 echo -e "$AMARELO Editando o arquivo squid.conf, Pressione ENTER pra continuar...$FIMCOR"
-vim /etc/squid/squid.conf
 read
 sleep 5
+vim /etc/squid/squid.conf
+
 
 echo
 echo -e "$AMARELO Atribuindo as permissões necessarias para o funcionamento do squid3 $FIMCOR"
