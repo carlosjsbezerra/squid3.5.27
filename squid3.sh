@@ -100,7 +100,7 @@ echo -e "$VERDE Cache criado com sucesso !!!$FIMCOR"
 sleep 1
 
 clear
-echo -e "$AMARELO Inicializando os Serviço do squid3 $FIMCOR"
+echo -e "$AMARELO Inicializando os Serviços do squid3 $FIMCOR"
 sleep 2
 systemctl start squid.service
 systemctl status squid.service
