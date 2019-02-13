@@ -19,6 +19,7 @@ echo -e "$AMARELO Adicionando o Repositório Universal do Apt, aguarde...$FIMCOR
 sleep 5
 add-apt-repository universe
 add-apt-repository multiverse
+sleep 5
 
 echo
 echo -e "$AMARELO Atualizando as listas do Apt, aguarde...$FIMCOR "
