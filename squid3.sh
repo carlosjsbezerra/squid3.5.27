@@ -9,8 +9,9 @@ FIMCOR="\033[0m"
 # sed -i -e 's/\r$//' <nome do arquivo>
 
 echo -e "$AMARELO Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração $FIMCOR"
-sleep 5
 export DEBIAN_FRONTEND="noninteractive"
+sleep 5
+echo -e "$VERDE Exportanção feita com sucesso !!!$FIMCOR"
 
 echo
 echo -e "$AMARELO Adicionando o Repositório Universal do Apt, aguarde...$FIMCOR"
