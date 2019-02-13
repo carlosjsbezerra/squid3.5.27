@@ -67,7 +67,9 @@ chown -R proxy:proxy /var/spool/squid
 echo -e "$VERDE Permissões atribuidas com sucesso $FIMCOR"
 
 echo
+echo -e "$AMARELO Desativando o Serviço do Squid3$FIMCOR"
 systemctl stop squid.service
+echo -e "$VERDE Serviço Desativado com Sucesso !!!$FIMCOR"
 echo -e "$AMARELO Criando Cache do squid $FIMCOR"
 sleep 3
 squid -z
