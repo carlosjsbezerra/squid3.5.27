@@ -52,15 +52,17 @@ sleep 5
 echo
 echo -e "$AMARELO Editando o arquivo squid.conf, Pressione ENTER pra continuar...$FIMCOR"
 vim /etc/squid/squid.conf
+read
 sleep 5
 
 echo
 echo -e "$AMARELO Atribuindo as permissões necessarias para o funcionamento do squid3 $FIMCOR"
+sleep 5
 chown -R proxy.proxy /var/log/squid/ 
 chown -R proxy:proxy /var/spool/squid
 echo -e "$VERDE Permissões atribuidas com sucesso $FIMCOR"
-sleep 5
 
+echo
 systemctl stop squid.service
 echo -e "$AMARELO Criando Cache do squid $FIMCOR"
 sleep 5
