@@ -12,6 +12,7 @@ echo -e "$AMARELO Exportando o recurso de Noninteractive do Debconf para não so
 export DEBIAN_FRONTEND="noninteractive"
 sleep 5
 echo -e "$VERDE Exportanção feita com sucesso !!!$FIMCOR"
+sleep 5
 
 echo
 echo -e "$AMARELO Adicionando o Repositório Universal do Apt, aguarde...$FIMCOR"
@@ -20,22 +21,22 @@ add-apt-repository universe
 add-apt-repository multiverse
 
 echo
-echo -e "$AMARELO Atualizando as listas do Apt, aguarde...$FIMCOR \n"
+echo -e "$AMARELO Atualizando as listas do Apt, aguarde...$FIMCOR "
 sleep 5
 apt update
 
 echo
-echo -e "$AMARELO Atualizando o sistema, aguarde...$FIMCOR\n"
+echo -e "$AMARELO Atualizando o sistema, aguarde...$FIMCOR"
 sleep 5
 apt -y upgrade
 
 echo
-echo -e "$AMARELO Removendo software desnecessários, aguarde...$FIMCOR\n"
+echo -e "$AMARELO Removendo software desnecessários, aguarde...$FIMCOR"
 sleep 5
 apt -y autoremove
 
 echo
-echo -e "$AMARELO Instalando Squid3, Aguarde...$FIMCOR\n"
+echo -e "$AMARELO Instalando Squid3, Aguarde...$FIMCOR"
 sleep 5 
 apt -y install squid3
 
