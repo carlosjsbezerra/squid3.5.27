@@ -75,7 +75,9 @@ echo -e "$AMARELO Editando o arquivo squid.conf, Pressione ENTER pra continuar..
 read
 sleep 2
 vim /etc/squid/squid.conf
-
+sleep 2
+echo -e "$VERDE Edição realizada com sucesso !!!$FIMCOR"
+sleep 1
 
 echo
 echo -e "$AMARELO Atribuindo as permissões necessarias para o funcionamento do squid3 $FIMCOR"
