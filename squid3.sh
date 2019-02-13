@@ -20,36 +20,54 @@ sleep 3
 add-apt-repository universe
 add-apt-repository multiverse
 sleep 3
+echo -e "$VERDE Repositórios adicionado sucesso !!!$FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Atualizando as listas do Apt, aguarde...$FIMCOR "
 sleep 3
 apt update
+sleep 3
+echo -e "$VERDE Lista atualizadas com sucesso !!!$FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Atualizando o sistema, aguarde...$FIMCOR"
 sleep 3
 apt -y upgrade
+sleep 3
+echo -e "$VERDE Sistema atualizado com sucesso !!!$FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Removendo software desnecessários, aguarde...$FIMCOR"
 sleep 3
 apt -y autoremove
+sleep 3
+echo -e "$VERDE Remoção de software desnecessário feito com sucesso !!!$FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Instalando Squid3, Aguarde...$FIMCOR"
 sleep 3 
 apt -y install squid3
+sleep 3
+echo -e "$VERDE Instalação do Squid3 feita com sucesso !!!$FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Backup do aquivo do squid $FIMCOR"
 sleep 3
 mv -v /etc/squid/squid.conf /etc/squid/squid.conf.old 
 sleep 3
+echo -e "$VERDE Backup feita com sucesso !!!$FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Copiando o aquivo squid.conf pré configura para /etc/squid/ $FIMCOR"
 cp -v conf/squid.conf /etc/squid/squid.conf 
+sleep 3
+echo -e "$VERDE Copia realizada com sucesso !!!$FIMCOR"
 sleep 3
 
 echo
