@@ -65,6 +65,7 @@ sleep 3
 chown -R proxy.proxy /var/log/squid/ 
 chown -R proxy:proxy /var/spool/squid
 echo -e "$VERDE Permissões atribuidas com sucesso $FIMCOR"
+sleep 3
 
 echo
 echo -e "$AMARELO Desativando o Serviço do Squid3$FIMCOR"
